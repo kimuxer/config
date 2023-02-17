@@ -4,7 +4,6 @@ end
 
 set -U fish_greeting
 
-macchina
 starship init fish | source
 
 alias l "exa"
