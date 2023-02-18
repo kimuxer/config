@@ -14,3 +14,25 @@ alias lla "ll -a"
 alias lt "lla -T"
 
 alias lg lazygit
+
+alias sps "doas pacman -S"
+alias spss "doas pacman -Ss"
+alias spr "doas pacman -R"
+alias sprs "doas pacman -Rs"
+alias spqo "doas pacman -Qo"
+alias spsii "doas pacman -Sii"
+
+alias update "doas pacman -Syu"
+alias upall "paru -Syu --noconfirm"
+
+alias unlock "doas rm /var/lib/pacman/db.lck"
+alias wget "wget -c"
+
+alias cleanup "doas pacman -Rns $(pacman -Qtdq)"
+
+alias rg "rg --sort path"
+
+alias ssn "poweroff"
+alias sr "reboot"
+
+
