@@ -28,7 +28,7 @@ alias upall "paru -Syu --noconfirm"
 alias unlock "doas rm /var/lib/pacman/db.lck"
 alias wget "wget -c"
 
-alias cleanup "doas pacman -Rns $(pacman -Qtdq)"
+alias clean "doas pacman -Rns (pacman -Qtdq)"
 
 alias rg "rg --sort path"
 
