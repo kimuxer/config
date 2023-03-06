@@ -1,22 +1,27 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 24,
+    "height": 25,
     "spacing": 4,
     "exclusive": true,
     "gtk-layer-shell": true,
     "passthrough": false,
     "fixed-center": true,
-    "modules-left": ["custom/logo", "wlr/workspaces", "hyprland/window"],
-    "modules-center": ["clock#date", "clock"],
-    "modules-right": ["cpu", "memory", "pulseaudio", "tray" ],
+    "modules-left": ["wlr/workspaces"],
+    "modules-center": ["custom/spotify"],
+    "modules-right": ["custom/updates", "pulseaudio", "clock", "clock#date", "tray"],
     "wlr/workspaces": {
         "on-click": "activate",
         "all-outputs": true,
 	"sort-by-number": true,
-	"on-scroll-up": "hyprctl dispatch workspace e+1",
+	"on-scroll-up": "hyprctl ispatch workspace e+1",
         "on-scroll-down": "hyprctl dispatch workspace e-1",
 	"format": "{name}"
+    },
+    "custom/updates": {
+        "exec": "(paru -Qua) | wc -l", 
+        "interval": 60,
+        "format": " {}"
     },
     "tray": {
         "spacing": 10
@@ -64,5 +69,12 @@
         "tooltip": false,
         "on-click": "power-menu",
         "format": " ",
+    },
+    "custom/spotify": {
+        "interval": 2,
+        "return-type": "json",
+        "exec": "~/.config/waybar/script/spotify.sh",
+        "exec-if": "pgrep spotify",
+        "escape": true
     },
 }

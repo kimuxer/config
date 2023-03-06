@@ -35,4 +35,3 @@ alias rg "rg --sort path"
 alias ssn "poweroff"
 alias sr "reboot"
 
-

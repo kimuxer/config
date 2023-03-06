@@ -1,10 +1,9 @@
 * {
   min-height: 0;
-  font-family: FiraCode Nerd Font;
-  font-size: 11px;
+  font-family: Inconsolata Nerd Font;
+  font-size: 13px;
   font-weight: 800;
 }
-
 window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -24,11 +23,11 @@ window#waybar.hidden {
   min-width: 0;
   background: transparent;
   box-shadow: inset 0 -3px transparent;
-  padding: 0 5px;
-  margin: 4px 3px;
+  padding: 0 6px;
+  margin: 5px 5px;
   min-height: 0;
-  border-radius: 1px;
-  background-color: #1e1e2e;
+  border-radius: 6px;
+  background-color: transparent;
   color: #cdd6f4;
 }
 
@@ -36,7 +35,7 @@ window#waybar.hidden {
   box-shadow: inherit;
   text-shadow: inherit;
   color: #1e1e2e;
-  background-color: #cdd6f4;
+  background-color: transparent;
 }
 
 #workspaces button.active {
@@ -45,13 +44,14 @@ window#waybar.hidden {
 }
 
 #workspaces button.urgent {
-  background-color: #f38ba8;
+  background-color: transparent;
 }
 
 #clock,
 #pulseaudio,
 #custom-logo,
 #custom-power,
+#custom-updates,
 #cpu,
 #tray,
 #window,
@@ -60,60 +60,80 @@ window#waybar.hidden {
   border-radius: 4px;
   padding: 0px 12px;
   margin: 4px 3px;
-  background-color: #1e1e2e;
+  background-color: transparent;
 }
 
 #custom-sep {
   padding: 0px;
   color: #585b70;
+  background-color: transparent;
 }
 
 #cpu {
   color: #94e2d5;
+  background-color: transparent;
 }
 
 #memory {
   color: #cba6f7;
+  background-color: transparent;
 }
 
 #clock {
-  color: #89b4fa;
+  color: rgba(154, 205, 50, 0.85);
+  background-color: transparent;
 }
 
 #clock.date {
-  color: #74c7ec;
+  color: rgba(154, 205, 50, 0.85);
+  background-color: transparent;
 }
 
 #window {
-  color: #a6e3a1;
+  color: rgba(154, 205, 50, 0.85);
+  background-color: transparent;
 }
 
 #pulseaudio {
-  color: #b4befe;
+  color: rgba(154, 205, 50, 0.85);
+  background-color: transparent;
 }
 
 #custom-logo {
   color: #89b4fa;
+  background-color: transparent;
 }
 
 #custom-power {
-  color: #f38ba8;
+  color: rgba(154, 205, 50, 0.85);
   margin-right: 6px;
   padding-right: 9px;
   font-size: 14px;
+  background-color: transparent;
 }
-
+#custom-updates {
+  color: rgba(154, 205, 50, 0.85);
+  border-left: 6px;
+  border-right: 9px;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: transparent;
+}
 #pulseaudio.muted {
-  color: #a6adc8;
+  color: rgba(154, 205, 50, 0.85);
+  background-color: transparent;
 }
 
 @keyframes blink {
   to {
-    background-color: #f38ba8;
-    color: #181825;
+    background-color: transparent;
+    color: rgba(154, 205, 50, 0.85);
   }
 }
-
 tooltip {
-  border-radius: 8px;
+  background-color: transparent;
+  border-radius: 10px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgba(154, 205, 50, 0.85);
 }
