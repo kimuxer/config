@@ -28,19 +28,19 @@ window#waybar.hidden {
   min-height: 0;
   border-radius: 6px;
   background-color: transparent;
-  color: #cdd6f4;
+  color: rgba(154, 205, 50, 0.85);
 }
 
 #workspaces button:hover {
   box-shadow: inherit;
   text-shadow: inherit;
-  color: #1e1e2e;
+  color: rgba(154, 205, 50, 0.85);
   background-color: transparent;
 }
 
 #workspaces button.active {
-  color: #1e1e2e;
-  background-color: #89b4fa;
+  color: #000000;
+  background-color: rgba(154, 205, 50, 0.85);
 }
 
 #workspaces button.urgent {
