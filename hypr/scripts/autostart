@@ -8,6 +8,6 @@ exec-once = foot --server
 # wallpaper
 exec-once = hyprpaper
 #USB automount
-#exec-once = udiskie
+exec-once = udiskie
 # waybar
 exec-once = ~/.config/waybar/waybar.sh
