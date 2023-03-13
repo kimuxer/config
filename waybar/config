@@ -1,13 +1,13 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 25,
+    "height": 28,
     "spacing": 4,
     "exclusive": true,
     "gtk-layer-shell": true,
     "passthrough": false,
     "fixed-center": true,
-    "modules-left": ["wlr/workspaces"],
+    "modules-left": ["wlr/workspaces", "hyprland/window"],
     "modules-center": ["custom/spotify"],
     "modules-right": ["custom/updates", "pulseaudio", "clock", "clock#date", "tray"],
     "wlr/workspaces": {
