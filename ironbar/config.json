@@ -1,0 +1,18 @@
+{
+    "position": "bottom",
+    "height": 24,
+    "start": [
+		{
+		    "type": "workspaces", 
+		    "name_map": {
+		        "1": "1",
+			"2": "2",
+			"3": "3"
+		    },
+		    "all_monitors": false,
+		    "sort": "alphanumeric"
+		}
+    ],
+    "center": [],
+    "end": []
+}
